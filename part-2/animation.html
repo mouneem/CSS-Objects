@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title></title>
+    <style media="screen">
+      @font-face {
+      font-family: gameboy;
+      src: url(gameboy.ttf);
+      }
+      body{font-family:gameboy;}
+      .animation{overflow:hidden; position:relative;}
+      .gameboy{font-size:30pt; color:#00f;}
+      .gameboy-mask{position: absolute; z-index: 10;left: 0; top: 0; bottom: 0; right: 0; background: #fff;  height: 100px; transition: all .5s linear;}
+      .animation:hover .gameboy-mask{position: absolute;left: 100%;}
+      .nintendo{font-size:10pt;}
+      .nintendo-mask{margin-top: 190px ;position: absolute; z-index: 10;left: 0; top: 0; bottom: 0; right: 0; background: #fff;  height: 50px; transition: all .5s linear;}
+      .animation:hover .nintendo-mask{left: 100%; background: #fff; transition: all .5s linear;}
+      span{margin: 0 !important; padding: 0 !important;}
+    </style>
+  </head>
+  <body>
+    <div class="animation pt-5 w-100 text-center">
+      <div class="gameboy-mask mt-5"></div>
+      <div class="gameboy pt-5">
+        <span style="color:#00f">G</span>
+        <span style="color:#0b0">A</span>
+        <span style="color:#f0f">M</span>
+        <span style="color:#f00">E</span>
+        <span style="color:#f00"> </span>
+        <span style="color:#f00">B</span>
+        <span style="color:#ee0">O</span>
+        <span style="color:#ee0">Y</span>
+      </div>
+      <div class="nintendo mt-5">
+        Nintendo
+      </div>
+      <div class="nintendo-mask"></div>
+
+    </div>
+  </body>
+</html>
